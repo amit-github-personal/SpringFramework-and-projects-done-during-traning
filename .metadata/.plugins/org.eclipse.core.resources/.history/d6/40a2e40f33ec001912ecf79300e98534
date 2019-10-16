@@ -1,0 +1,11 @@
+package com.springmvc.mainController;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class mainController {
+	
+	@RequestMapping("/compose")
+	
+
+}

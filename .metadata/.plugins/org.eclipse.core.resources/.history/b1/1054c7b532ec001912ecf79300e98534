@@ -1,0 +1,12 @@
+package com.springmvc.user;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserInfo {
+	private String username;
+	private String email;
+	private String to;
+	private String message;
+	
+}

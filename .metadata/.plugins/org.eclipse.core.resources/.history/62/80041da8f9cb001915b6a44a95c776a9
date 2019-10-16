@@ -1,0 +1,45 @@
+package com.client.Connection;
+
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.Socket;
+
+import javax.swing.JOptionPane;
+
+public class ConnWithServer extends Thread {
+	
+	private static final int port_no=8451;
+	private static final String url="192.168.0.1010";
+	private Socket client;
+	
+	public ConnWithServer() 
+	{
+		start();
+	}
+	
+	public void run()
+	{
+		try
+		{
+			client=new Socket(url, port_no);
+			
+			//Once connected 
+			
+			BufferedReader reader=new BufferedReader(new InputStreamReader(client.getInputStream()));
+			DataOutputStream writer=new DataOutputStream(client.getOutputStream());
+			
+		}
+		catch(IOException e)
+		{
+			System.out.println("Exception Occured while connecting to Server : " +e.getLocalizedMessage());
+			JOptionPane.showMessageDialog(null, "Error while Connecting to Server :"+ e.getMessage());
+		} 
+	}
+	
+	public static void main(String...args)
+	{
+		new ConnWithServer();
+	}
+}

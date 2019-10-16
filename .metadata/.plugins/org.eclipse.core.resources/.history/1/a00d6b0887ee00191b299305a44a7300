@@ -1,0 +1,11 @@
+package com.mail.MailProcessor;
+
+import org.springframework.mail.MailSender;
+
+public class EmailProcessor {
+	
+	@Autowired
+	private MailSender sender;
+	
+
+}

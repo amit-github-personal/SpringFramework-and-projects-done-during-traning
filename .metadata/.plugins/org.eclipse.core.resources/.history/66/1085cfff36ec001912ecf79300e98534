@@ -1,0 +1,25 @@
+package com.springmvc.mainController;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.springmvc.user.UserInfo;
+
+@Controller
+public class mainController {
+	
+	@RequestMapping(value="compose")
+	public String compose()
+	{
+		System.out.println("Request Received...");
+		return "new";
+	}
+	
+	@RequestMapping("/send")
+	public String send(UserInfo u)
+	{
+		System.out.println(u.getEmail());
+		return "";
+	}
+
+}

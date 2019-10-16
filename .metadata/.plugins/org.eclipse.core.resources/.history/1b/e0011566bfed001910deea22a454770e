@@ -1,0 +1,30 @@
+package mail.UserManager;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.springmvc.user.UserInfo;
+
+public class UserOperations extends UserManagerAdapater {
+	
+	private JdbcTemplate jdbc;
+	
+
+	@Override
+	public int add(UserInfo u)
+	{
+		String sql="insert into mail user values('"+u.getUsername()+""+u.getPassword()+""+u.getEmail()+"')";
+		return jdbc.update(sql);
+	}
+	
+	@Override
+	public boolean check(String user, String pass)
+	{
+		
+		return false;
+		
+	}
+	
+	
+}

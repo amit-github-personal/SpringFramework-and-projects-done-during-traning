@@ -1,0 +1,15 @@
+package mail.UserManager;
+
+import java.util.List;
+
+import com.springmvc.user.UserInfo;
+
+public class UserOperations extends UserManagerAdapater {
+
+	@Override
+	public boolean add()
+	{
+		
+	}
+	
+}

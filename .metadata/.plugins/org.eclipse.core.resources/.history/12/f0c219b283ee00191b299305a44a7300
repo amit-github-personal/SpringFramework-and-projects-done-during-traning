@@ -1,0 +1,7 @@
+package com.mail.MailProcessor;
+
+public class EmailProcessor {
+	
+	private MailSender mail;
+
+}

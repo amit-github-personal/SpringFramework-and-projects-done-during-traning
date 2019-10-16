@@ -1,0 +1,23 @@
+package com.mail.MailProcessor;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.MailSender;
+import org.springframework.mail.SimpleMailMessage;
+
+import com.springmvc.user.UserInfo;
+
+public class EmailProcessor {
+	
+	private MailSender sender;
+
+	public void setSender(MailSender sender) {
+		this.sender = sender;
+	}
+	
+	public void sendEmail(@ModelAttribute("user") UserInfo u)
+	{
+		SimpleMailMessage message=new SimpleMailMessage();
+		message.getTo();
+	}
+
+}

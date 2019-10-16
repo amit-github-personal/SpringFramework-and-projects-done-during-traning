@@ -1,0 +1,26 @@
+package com.client.IOOperations;
+
+import java.io.BufferedReader;
+import java.net.Socket;;
+
+public class ReadThread extends Thread {
+	
+	private BufferedReader reader;
+	
+	public ReadThread(BufferedReader reader)
+	{
+		this.reader=reader;
+	}
+
+	public void run()
+	{
+		String message="";
+		
+		do
+		{
+			message=reader.readLine();
+			System.out.print("Server Message : "+ message+"/n");
+		}
+		while(!message.equalsIgnoreCase("stop"));
+	}
+}

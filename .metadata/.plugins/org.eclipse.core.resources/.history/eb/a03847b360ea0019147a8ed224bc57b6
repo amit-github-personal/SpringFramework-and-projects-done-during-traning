@@ -1,0 +1,12 @@
+package java.mediaframeork;
+
+import javax.media.*;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.net.MalformedURLException;
+
+public class Audio {
+	
+
+}

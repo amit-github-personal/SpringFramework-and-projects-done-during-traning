@@ -1,0 +1,32 @@
+package com.springmvc.mainController;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.springmvc.user.UserInfo;
+
+@Controller
+public class ControllerDemo {
+	
+	@RequestMapping("/compose")
+	public String compose()
+	{
+		System.out.println("Request Received...");
+		return "new";
+	}
+	
+	@RequestMapping("/login")
+	public String login()
+	{
+		return "login";
+	}
+	
+	@RequestMapping("/send")
+	public String send( @Autowired() UserInfo u)
+	{
+		System.out.println(u.getEmail());
+		return "";
+	}
+
+}

@@ -1,0 +1,59 @@
+a
+	{
+		margin: 0px;
+		padding:10px;
+		font-size:25px;
+		color:blue;
+		text-decoration:none;
+		text-shadow:2px 2px 8px #FF0000;
+		
+	}
+	
+	body
+	{
+		background-image :url("back.jpg");
+	}
+	
+	a:hover
+	{
+		font-size:28px;
+		
+	}
+	
+	#bar
+	{
+		opacity:50px;
+		margin:0px;
+		padding: 10px;
+		background-color:white;
+	}
+	
+	h1
+	{
+		Color:powdered Blue; 
+		text-shadow:2px 2px 8px #FF0000; 
+		font: Cursive
+	}
+	input
+	{
+		width:300px;
+		height:30px
+	}
+	
+	label
+	{
+		font-size:30px;
+		color :#080a09;
+		
+		
+	}
+	
+	.second
+	{
+		margin:auto;
+		height:500px;
+		width:600px;
+		padding:20px;
+		opacity:0.7;
+		background-color:#03fc7b;
+	}

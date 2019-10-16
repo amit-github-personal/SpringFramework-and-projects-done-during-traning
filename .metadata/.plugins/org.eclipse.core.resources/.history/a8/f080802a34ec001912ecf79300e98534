@@ -1,0 +1,51 @@
+package com.springmvc.user;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserInfo {
+	
+	private String username;
+	private String email;
+	private String to;
+	private String message;
+	private String sub;
+	
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getTo() {
+		return to;
+	}
+	public void setTo(String to) {
+		this.to = to;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	public String getSub() {
+		return sub;
+	}
+	public void setSub(String sub) {
+		this.sub = sub;
+	}
+	
+	public void print()
+	{
+		System.out.println("User Invoked");
+	}
+	
+	
+}

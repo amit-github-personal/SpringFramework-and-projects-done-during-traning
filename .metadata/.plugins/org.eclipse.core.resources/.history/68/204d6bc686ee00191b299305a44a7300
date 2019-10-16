@@ -1,0 +1,9 @@
+package com.mail.MailProcessor;
+
+import javax.mail.MailSenderImpl;
+
+public class EmailProcessor {
+	
+	
+
+}

@@ -1,0 +1,41 @@
+package mail.UserManager;
+
+import java.util.List;
+
+import com.springmvc.user.UserInfo;
+
+public class UserManagerAdapater implements UserManager {
+
+	public int add(UserInfo u) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int recoverPassword(UserInfo u) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public boolean removeUser(UserInfo u) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public List<String> contacts(UserInfo u) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public int login(UserInfo e)
+	{
+		String sql="select * from mailuser";
+		return 0;
+		
+	}
+
+	public boolean check(String user, String pass) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

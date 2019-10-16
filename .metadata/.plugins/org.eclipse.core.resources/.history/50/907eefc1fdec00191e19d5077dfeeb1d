@@ -1,0 +1,16 @@
+package mail.UserManager;
+
+import com.springmvc.user.UserInfo;
+
+public interface UserManager {
+	
+	//This will add the email user into the database
+	public boolean add(UserInfo u);
+	
+	//It will be a password recovery method
+	public int recoverPassword(UserInfo u);
+	
+	//This will be remove user option
+	public boolean removeUser()
+
+}

@@ -1,0 +1,57 @@
+package com.Server.Connections;
+
+import java.io.IOException;
+import com.clients.List.ClientList;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.HashMap;
+
+public class Server extends Thread {
+	
+	private static ServerSocket serverSocket;
+	//private static Socket clientSocket;
+	private static final int port_no=8451;
+	HashMap<Integer, Socket> client;
+
+	
+	public Server()
+	{
+		start();
+	}
+		
+		public void run()
+		{
+			try {
+				
+				serverSocket=new ServerSocket(port_no);
+				System.out.print("Server statrted at port no : "+port_no);
+				
+				int i=1;
+				
+				while(true)
+				{
+					client=new HashMap<Integer,Socket>();
+					
+					//We're keeping the client unique so that ew can easily identify them
+					client.put(i, serverSocket.accept());
+					System.out.println("Client" + i + " got connected at address: "+client.get(i));
+					
+					new ClientList(client, i).start();
+					
+					i++;
+					
+				}
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+	
+	public static void main(String...args)
+	{
+		new Server();
+	}
+
+}

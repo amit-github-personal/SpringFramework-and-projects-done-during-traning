@@ -1,0 +1,12 @@
+package mail.UserManager;
+
+import com.springmvc.user.UserInfo;
+
+public interface UserManager {
+	
+	//This will add the email user into the database
+	public boolean add(UserInfo u);
+	
+	public int recoverPassword(UserInfo u);
+
+}

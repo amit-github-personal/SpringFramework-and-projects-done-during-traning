@@ -1,0 +1,15 @@
+package com.client.data;
+
+import java.util.HashMap;
+
+public class CientData {
+	
+	private Map<Integer, Socket> client;
+	
+	
+	public ClientData(HashMap<Integer, Socket> client)
+	{
+		this.client=client;
+	}
+
+}

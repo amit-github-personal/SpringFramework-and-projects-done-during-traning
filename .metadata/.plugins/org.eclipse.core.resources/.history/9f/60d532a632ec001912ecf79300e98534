@@ -1,0 +1,5 @@
+package com.springmvc.user;
+
+public class UserInfo {
+
+}

@@ -1,0 +1,40 @@
+package com.clients.List;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.Socket;
+import java.util.HashMap;
+
+import javax.swing.JOptionPane;
+
+public class ClientList extends Thread{
+	
+	private HashMap<Integer, Socket> client=null;
+	private DataOutputStream dos;
+	private DataInputStream dis;
+
+	public ClientList(HashMap<Integer, Socket> client2, int i) 
+	{
+		client=client2;
+		
+		if(client==null)
+		{
+			JOptionPane.showMessageDialog(null, "Client Object is null.");
+		}
+	}
+	
+	
+	public void run()
+	{
+		try
+		{
+			
+		}
+		catch(Exception e)
+		{
+			JOptionPane.showMessageDialog(null, e.getMessage());
+		}
+	}
+	
+
+}

@@ -1,0 +1,42 @@
+package com.client.IOOperations;
+
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class WriteThread extends Thread {
+	
+	private static DataOutputStream writer;
+	
+	public WriteThread(DataOutputStream writer)
+	{
+		this.writer=writer;
+	}
+	
+	public void run()
+	{
+		String clientText="";
+		
+		do
+		{
+			
+			
+			try 
+			{
+				
+				BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+				clientText=br.readLine();
+				
+				writer.writeUTF(clientText);
+				writer.flush();
+				
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
+		}
+		while(!clientText.equalsIgnoreCase("stop"));
+	}
+
+}

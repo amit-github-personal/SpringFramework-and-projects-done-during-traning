@@ -1,0 +1,43 @@
+package com.springjdbc.SpringResultSetExtractor;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext con=new ClassPathXmlApplicationContext("applicationContext.xml");
+    	EmployeyDao jt=con.getBean("Em_dao", EmployeyDao.class);
+    	
+        System.out.println("--------Inserting Record-----------");
+       
+        Employey em=new Employey();
+        em.setEm_id(1);
+        em.setDept("EA");
+        em.setAge(42);
+        em.setDesig("Manager");
+        em.setEm_name("Himanshu Path");
+        int i = jt.addEmployey(em);
+        
+        if(i>0)
+        {
+        	System.out.println("Profile added");
+        }
+        else
+        {
+        	System.out.println("Error while inserting record.");
+        }
+        
+        Employey em1=new Employey();
+        em.setEm_id(3122);
+        em.setEm_name("John Wick");
+        
+        
+    }
+}

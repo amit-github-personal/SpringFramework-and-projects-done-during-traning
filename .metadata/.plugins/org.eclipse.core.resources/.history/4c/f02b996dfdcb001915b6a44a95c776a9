@@ -1,0 +1,34 @@
+package com.client.IOOperations;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.net.Socket;;
+
+public class ReadThread extends Thread {
+	
+	private BufferedReader reader;
+	
+	public ReadThread(BufferedReader reader)
+	{
+		this.reader=reader;
+	}
+
+	public void run()
+	{
+		String message="";
+		
+		do
+		{
+			try 
+			{
+				message=reader.readLine();
+			
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
+			System.out.print("Server Message : "+ message+"/n");
+		}
+		while(!message.equalsIgnoreCase("stop"));
+	}
+}

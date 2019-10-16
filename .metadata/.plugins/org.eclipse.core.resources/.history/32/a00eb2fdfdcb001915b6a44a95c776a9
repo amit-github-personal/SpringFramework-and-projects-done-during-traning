@@ -1,0 +1,23 @@
+package com.client.IOOperations;
+
+import java.io.DataOutputStream;
+
+public class WriteThread extends Thread {
+	
+	private static DataOutputStream writer;
+	
+	public WriteThread(DataOutputStream writer)
+	{
+		this.writer=writer;
+	}
+	
+	public void run()
+	{
+		do
+		{
+			String clientMessage="";
+			BufferedReader br=new BufferedReader(new InputStream(System.in));
+		}
+	}
+
+}

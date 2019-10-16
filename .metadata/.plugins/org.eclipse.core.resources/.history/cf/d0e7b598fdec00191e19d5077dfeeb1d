@@ -1,0 +1,5 @@
+package mail.UserManager;
+
+public interface UserManager {
+
+}

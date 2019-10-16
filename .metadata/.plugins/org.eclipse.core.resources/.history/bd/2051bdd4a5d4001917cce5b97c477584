@@ -1,0 +1,20 @@
+package com.spring.jdbc.SpringJDBCTemplate;
+
+import javax.sql.DataSource;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class JdbcTemplateSpring {
+	
+	private JdbcTemplate jdbc;
+	private DataSource datasource;
+	
+	public void setDatasource(DataSource datasource) {
+		this.datasource = datasource;
+		jdbc= new JdbcTemplate(datasource);
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,11 @@
+package mail.UserManager;
+
+import java.util.List;
+
+import com.springmvc.user.UserInfo;
+
+public class UserOperations extends UserManagerAdapter {
+
+	
+	
+}

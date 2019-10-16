@@ -1,0 +1,18 @@
+package com.client.data;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.net.Socket;
+import ChatServer.src.com.server.connection.Server;
+
+public class CientData {
+	
+	private Map<Integer, Socket> client;
+	
+	
+	public CientData(HashMap<Integer, Socket> client)
+	{
+		this.client=client;
+	}
+
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+
+<bean id="ad" class="SpringAggreation.com.springagreegation.Address">
+<constructor-arg value="021" type="int"></constructor-arg>
+<constructor-arg value="Silicon city"></constructor-arg>
+<constructor-arg value="Noida"></constructor-arg>
+<constructor-arg value="Uttar Pradesh"></constructor-arg>
+	</bean>
+	
+	<bean id="em" class="SpringAggreation.com.springagreegation.Employey">
+		<constructor-arg value="58899" type="int"></constructor-arg>
+		<constructor-arg value="Amit"></constructor-arg>
+		<constructor-arg value="Technical Associate"></constructor-arg>
+		<constructor-arg ref="ad"></constructor-arg>
+		</bean>
+
+	</beans>

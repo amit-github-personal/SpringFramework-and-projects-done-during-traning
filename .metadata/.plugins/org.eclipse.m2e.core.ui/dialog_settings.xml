@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Amit\Jsp\RabbitMQ_end_to_end\src\com\rabbitmq\test\User.java"/>
+			<item value="C:\Users\Amit\Jsp\SpringPro2\src\main\java\applicationContext.xml"/>
+			<item value="C:\Users\Amit\Jsp\InventoryPro"/>
+			<item value="C:\Users\Amit\Jsp\ChatClient"/>
+			<item value="C:\Users\Amit\Jsp\ChatClient\src\Database.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.springjdbc.SpringMVCJdbc"/>
+			<item value="com.springformTag.SpringFormTag"/>
+			<item value="com.springjdbc.SpringImplicitObject"/>
+			<item value="com.springjdbc.Spring_MVC_2"/>
+			<item value="com.springjdbc.Spring_MVC_PROJECT1"/>
+			<item value="com.springjdbc.SpringJDBC"/>
+			<item value="SpringAggreation.com.springagreegation"/>
+		</list>
+		<list key="groupId">
+			<item value="com.springjdbc"/>
+			<item value="com.springformTag"/>
+			<item value="SpringAggreation"/>
+		</list>
+		<list key="artifactId">
+			<item value="SpringMVCJdbc"/>
+			<item value="SpringFormTag"/>
+			<item value="SpringImplicitObject"/>
+			<item value="Spring_MVC_2"/>
+			<item value="Spring_MVC_PROJECT1"/>
+			<item value="SpringJDBC"/>
+			<item value="com.springagreegation"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

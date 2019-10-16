@@ -1,0 +1,8 @@
+package com.spring.jdbc.SpringJDBCTemplate;
+
+import org.springframework.jdbc.core.RowMapper;
+
+public class StudentMapper implements RowMapper<Student> {
+	
+
+}
