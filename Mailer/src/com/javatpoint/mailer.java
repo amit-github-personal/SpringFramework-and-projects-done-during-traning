@@ -32,8 +32,8 @@ public class mailer extends HttpServlet {
 		String to=request.getParameter("t1");
 		String sub=request.getParameter("t2");
 		String msg=request.getParameter("t3");
-		String from="amitmishra1800@gmail.com";
-		String pass="Techmn.588939";
+		String from="abcmaila";
+		String pass="fafreggd";
 		
 		Properties prop=new Properties();
 		
